@@ -4,19 +4,18 @@ drinkOrder = (size, buttonName) => {
     let softDrinkLabel;
     switch(buttonName) {
         case "cola":
-            softDrinkLabel = "Cola"
+            return `You have ordered a ${size} of Cola`
             break;
         case "lemon":
-            softDrinkLabel = "Lemonade"
+            return `You have ordered a ${size} of Lemonade`
             break;
         case "orange":
-            softDrinkLabel = "Orangeade"
+            return `You have ordered a ${size} of Orangeade`
             break;
         default:
           // code block
       }
-      return `You have ordered a ${size} of ${softDrinkLabel}`
 
 };
 
-console.log(drinkOrder("large", "cola"));
+console.log(drinkOrder("small", "orange"));
